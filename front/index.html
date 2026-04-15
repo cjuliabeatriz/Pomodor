@@ -24,6 +24,8 @@
             outline:none
         }
     </style>
+</head>
+<body>
 <div>   
     <h1>Login</h1>
     <input type="text" placeholder="Nome de usuário" style="padding: 10px;">
@@ -31,7 +33,7 @@
     <input type="password" placeholder="Senha" style="padding: 10px;">
    
     <br><br>
-    <button>Entrar</button>
+    <button id="btn-entrar">Entrar</button>
     <style>
         button {
             padding: 10px 20px;
@@ -42,5 +44,11 @@
             cursor: pointer;
         }
     </style>
+    <script>
+    document.getElementById('btn-entrar').addEventListener('click', function() {
+    window.location.href = 'backand';
+    });
+</script>
 </div>
+</body>
 </html>
