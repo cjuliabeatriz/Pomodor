@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(45deg, rgb(28,28,28), darkviolet);
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            border-width: 3px;
+            border-color: white;
+            box-shadow: 0 0 10px #fff, 0 0 20px darkviolet, 0 0 40px darkviolet;
+            border-style: solid;
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            outline:none
+        }
+    </style>
+</head>
+<body>
+<div>   
+    <h1>Login</h1>
+    <input type="text" placeholder="Nome de usuário" style="padding: 10px;">
+    <br><br>    
+    <input type="password" placeholder="Senha" style="padding: 10px;">
+   
+    <br><br>
+    <button id="btn-entrar">Entrar</button>
+    <style>
+        button {
+            padding: 10px 20px;
+            background-color: #deecde;
+            color: rgb(54, 4, 119);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+    document.getElementById('btn-entrar').addEventListener('click', function() {
+    window.location.href = 'backand';
+    });
+</script>
+</div>
+</body>
+</html>
