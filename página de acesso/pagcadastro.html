@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <title>Cadastro</title>
+      <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(45deg, rgb(28,28,28), darkviolet);
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            border-width: 3px;
+            border-color: white;
+            box-shadow: 0 0 10px #fff, 0 0 20px darkviolet, 0 0 40px darkviolet;
+            border-style: solid;
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            outline:none
+        }/* Vamos usar o mesmo estilo da tela de login */
+      </style>
+  </head>
+  <body>
+      <div>
+          <h1>Crie sua conta</h1>
+          <!-- E-mail -->
+          <input id="email" type="email" placeholder="Seu e-mail" >
+          <!-- Senha -->
+          <input id="senha" type="password" placeholder="Sua senha">
+          <!-- Confirmar senha -->
+
+          <input id="confirmar-senha" type="password" placeholder="Confirme sua senha">
+          <!-- Data de nascimento -->
+          <input id="data-nascimento" type="date">
+          <!-- Botão -->
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+          <button id="idCadastrar">Cadastrar</button>
+          <style>
+        button {
+            padding: 10px 20px;
+            background-color: #deecde;
+            color: rgb(54, 4, 119);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+          </style>
+    <script>document.getElementById("idCadastrar").addEventListener("click", function() {
+       window.location.href = 'http://127.0.0.1:5500/pomodoro/index.html'; // Lógica de cadastro
+    })</script>
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+          <!-- Link para voltar ao login -->
+          <a href="index.html">Já tenho conta</a>
+      </div>
+
+      <script>
+          // Aqui vai o JavaScript para salvar o cadastro
+      </script>
+  </body>
+  </html>
