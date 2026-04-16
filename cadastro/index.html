@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criar Conta</h1>
+
+        <!-- Etapa 1: Formulário de cadastro -->
+        <form id="form-cadastro">
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required placeholder="seu@email.com">
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required placeholder="Digite sua senha">
+                <small id="senha-aviso"></small>
+            </div>
+
+            <div class="campo">
+                <label for="confirmar-senha">Confirmar senha:</label>
+                <input type="password" id="confirmar-senha" required placeholder="Repita a senha">
+                <small id="senha-erro"></small>
+            </div>
+
+            <div class="campo">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" required>
+                <small id="idade-aviso"></small>
+            </div>
+
+            <button type="submit" id="btn-cadastrar">Cadastrar</button>
+            <p id="mensagem"></p>
+        </form>
+
+        <!-- Etapa 2: Verificação por e-mail -->
+        <form id="form-verificacao" class="oculto">
+            <h2>Verifique seu e-mail</h2>
+            <p>Enviamos um código para <strong id="email-destino"></strong></p>
+
+            <div class="campo">
+                <label for="codigo">Código de verificação:</label>
+                <input type="text" id="codigo" required placeholder="Digite o código" maxlength="6">
+            </div>
+
+            <button type="submit" id="btn-verificar">Verificar</button>
+            <button type="button" id="btn-reenviar">Reenviar código</button>
+            <p id="mensagem-verificacao"></p>
+        </form>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
